@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Загадки</title>
+	<link rel="stylesheet" href="mystyle.css">
+
+	<script type="text/javascript">
+
+		var result = 0;
+		
+		function AskQuestion(textBoxId, answer)
+		{
+			var userAnswer = document.getElementById(textBoxId).value;
+			if(userAnswer == answer)
+				result++;
+
+		}
+
+		function AskQuestions()
+		{
+			AskQuestion("userAnswer1", "Ёлка");
+			AskQuestion("userAnswer2", "Дверь");
+			AskQuestion("userAnswer3", "Язык");
+			AskQuestion("userAnswer4", "Нос");
+		
+
+			if(result == 4)
+				alert('Вы угадали все загадки!');
+			else if(result == 1)
+				alert('Вы угадали только одну загадку!');
+			else if(result == 2)
+				alert('Вы угадали только две загадки!');
+			else if(result == 3)
+				alert('Вы угадали только три загадки!');
+			else if(result == 0)
+				alert('Вы ничего не угадали!');
+		}		
+
+	</script>
+</head>
+<body>
+
+	<div id="header">
+	<a href="index.html">Главная</a><span>/</span>
+	<a href="quest-2.html">Угадайка</a><span>/</span>
+	<a href="quest.html">Загадки</a><span>/</span>
+	<a href="Black Jack.html">Блэк Джек</a>
+	</div>
+
+	<div id="content">
+		<h1>Игра в загадки</h1>
+
+			<div id="box">
+				<h5>Я загадал несколько загадок, попробуй их угадать!</h5>
+
+			<p>Зимой и летом одним цветом</p>
+            <input type="text" id="userAnswer1">
+
+            <p>Кто приходит, кто уходит, все ее за ручку водят.</p>
+            <input type="text" id="userAnswer2">
+
+            <p>Если б не было его, не сказал бы ничего</p>
+            <input type="text" id="userAnswer3">
+
+            <p>Есть всегда у людей, есть всегда у кораблей.</p>
+            <input type="text" id="userAnswer4">
+
+            <br><br/>
+            <a href="#" onclick="AskQuestions();">Отправить</a>
+
+			</div>
+	</div>
+	<div id="footer">
+		Copyright © 2016
+	</div>
+
+</body>
+</html>
