@@ -1,14 +1,15 @@
 <html><head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 <title>Судоку</title></head>
+
+<div id="header">
+  <a href="index.html">Главная</a><span>/</span>
+  <a href="Sudoku.html">Судоку</a><span>/</span>
+  <a href="quest-2.html">Угадайка</a><span>/</span>
+  <a href="Black Jack.html">Блэк Джек</a>
+  </div>
 <script language='JavaScript'>
-  <div id="header">
-	<a href="index.html">Главная</a><span>/</span>
-	<a href="Sudoku.html">Судоку</a><span>/</span>
-	<a href="quest-2.html">Угадайка</a><span>/</span>
-	<a href="quest.html">Загадки</a><span>/</span>
-	<a href="Black Jack.html">Блэк Джек</a>
-	</div>
+
 var steps=5;
 var nregex=/^\d+$/g;
 var usernums=new Array();
@@ -286,7 +287,7 @@ function ttick()
 
 
 </script>
-<body bgcolor=#000000 text=#000000>
+<body bgcolor=#FFA500 text=#000080>
 <div id="nm" style="border-color:orange;border-style:solid;border-width:2px 2px 2px 2px;display:none;position:absolute;background-color:lightgreen;">
 <input type="button" onclick="sNum(1);return false;" value="1" style='width:25px;width:25px;background-color:lightgreen;'><input type="button" onclick="sNum(2);return false;" value="2" style='width:25px;width:25px;background-color:lightgreen;'><input type="button" onclick="sNum(3);return false;" value="3" style='width:25px;width:25px;background-color:lightgreen;'><br><input type="button" onclick="sNum(4);return false;" value="4" style='width:25px;width:25px;background-color:lightgreen;'><input type="button" onclick="sNum(5);return false;" value="5" style='width:25px;width:25px;background-color:lightgreen;'><input type="button" onclick="sNum(6);return false;" value="6" style='width:25px;width:25px;background-color:lightgreen;'><br><input type="button" onclick="sNum(7);return false;" value="7" style='width:25px;width:25px;background-color:lightgreen;'><input type="button" onclick="sNum(8);return false;" value="8" style='width:25px;width:25px;background-color:lightgreen;'><input type="button" onclick="sNum(9);return false;" value="9" style='width:25px;width:25px;background-color:lightgreen;'><br><input type="button" onclick="sNum(0);return false;" value="?" style='width:25px;width:25px;background-color:lightgreen;' title='Снять цифру'><input type="button" onclick="sNum(10);return false;" value="X" style='width:25px;width:25px;background-color:lightgreen;' title='Закрыть'>
 </div>
